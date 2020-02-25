@@ -1,0 +1,42 @@
+<CronoWidget>:
+
+    BoxLayout:
+        orientation: 'vertical'
+        cols: 1
+        spacing: 20
+        padding: [200, 10]
+
+
+        BoxLayout:
+            orientation: 'vertical'
+            Label:
+                text: root.cronoValueText
+                id: valor_cronometro
+                font_size: 70
+                color: [0, 1, 0 ,1]
+
+
+        GridLayout:
+            cols: 4
+            spacing: 20
+            padding: [20, 10]
+
+            Button:
+                text: 'Iniciar'
+                id: but_inciar
+                on_release: root.iniciar()
+
+            Button:
+                text: 'Parar'
+                id: but_parar
+                on_release: root.parar()
+
+            Button:
+                text: 'Zerar'
+                id: but_zerar
+                on_release: root.zerar()
+
+            Button:
+                text: 'Reiniciar'
+                id: but_reiniciar
+                on_release: root.reiniciar()
